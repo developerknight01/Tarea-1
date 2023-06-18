@@ -1,6 +1,6 @@
 ﻿const description = ["Cateto opuesto sobre hipotenusa", "Cateto adyacente sobre hipotenusa", "Cateto opuesto sobre cateto adyacente"];
 var chart = null; //variable para almacenar el grafico
-$(document).ready(function () {
+$(document).ready(function () {    
     inputFocus();
     clickAction();        
 
@@ -63,7 +63,7 @@ function clickAction() {
         }
     });
     $(".mainBody .boxRow-3 .btnCalculate").click(function () {
-        var result = 0;
+        var result = 0;        
         if ($(".mainBody .boxBody .boxRow-1 .row input").hasClass("active")) {
             const param = $(".mainBody .boxBody .boxRow-1 .row input.active").val();
             const degrees = $(".mainBody .boxRow-2 .inputBox input").val();

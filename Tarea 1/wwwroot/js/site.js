@@ -1,5 +1,6 @@
 ﻿$(document).ready(function () {
     closeMessageBox();
+    clickActionShare();
 });
 document.addEventListener("DOMContentLoaded", function (event) {
 
@@ -47,7 +48,7 @@ function closeMessageBox() {
         }, 350);
     });    
 }
-function clickAction() {
+function clickActionShare() {
     $("#nav-bar .btnGoBack").click(function () {
         history.back();
     });
