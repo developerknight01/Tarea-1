@@ -68,14 +68,7 @@ function clickAction() {
             const param = $(".mainBody .boxBody .boxRow-1 .row input.active").val();
             const degrees = $(".mainBody .boxRow-2 .inputBox input").val();
             // Destruye el gráfico existente
-            if (chart) {
-                //Realiza un cambio de estado de class para cargar ciertas animaciones de desaparicion y aparicion
-                $(".mainBody .boxContent .boxImage h5").removeClass("disappear");
-                $(".mainBody .boxContent .boxImage #grafico").removeClass("show");
-                setTimeout(() => {
-                    $(".mainBody .boxContent .boxImage h5").removeClass("hide");
-                    $(".mainBody .boxContent .boxImage #grafico").addClass("disappear");
-                }, 450);
+            if (chart) {;
                 chart.destroy();
             }
             if (param == "Seno" || param == "Coseno" || param == "Tangente") {
@@ -102,6 +95,13 @@ function calculateAngle(param) {
     if (param == "Seno" || param == "Coseno" || param == "Tangente") {        
         if (!grados.length > 0) {
             messageBox("emptyAngulo", null);   
+            //Realiza un cambio de estado de class para cargar ciertas animaciones de desaparicion y aparicion
+            $(".mainBody .boxContent .boxImage h5").removeClass("disappear");
+            $(".mainBody .boxContent .boxImage #grafico").removeClass("show");
+            setTimeout(() => {
+                $(".mainBody .boxContent .boxImage h5").removeClass("hide");
+                $(".mainBody .boxContent .boxImage #grafico").addClass("disappear");
+            }, 450)
         }
         else {
             if (grados < 0 || grados > 360) {
@@ -141,6 +141,13 @@ function calculateAngle(param) {
     }
     else {
         messageBox("emptyAngulo", null);
+        //Realiza un cambio de estado de class para cargar ciertas animaciones de desaparicion y aparicion
+        $(".mainBody .boxContent .boxImage h5").removeClass("disappear");
+        $(".mainBody .boxContent .boxImage #grafico").removeClass("show");
+        setTimeout(() => {
+            $(".mainBody .boxContent .boxImage h5").removeClass("hide");
+            $(".mainBody .boxContent .boxImage #grafico").addClass("disappear");
+        }, 450)
     }
 }
 function drawingAngle(degrees,result,angle) {
