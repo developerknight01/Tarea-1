@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<aside class="mainBody">
+    <aside class="boxHead">
+        <h2>¿Qu&eacute; puede encontrar en este apartado?</h2>
+        <p>
+            Podrá realizar el c&aacute;lculo de los &aacute;ngulos de:
+            <ul>
+                <li class="item item-1">Seno</li>
+                <li class="item item-2">Coseno</li>
+                <li class="item item-3">Tangente</li>
+                <li class="item item-4">&Aacute;rea del C&Iacute;rculo</li>
+            </ul>
+        </p>
+    </aside>
+    <aside class="boxBody">
+        <aside class="boxContent">
+            <aside class="boxRow boxRow-1">
+                <aside class="row">
+                    <label>Seleccione el tipo de &aacute;ngulo por calcular:</label>
+                </aside>
+                <aside class="row">
+                    <label class="lbNameTag" for="seno">Seno</label>
+                    <input type="radio" id="seno" name="angulo" value="Seno" />
+                </aside>
+                <aside class="row">
+                    <label class="lbNameTag" for="coseno">Coseno</label>
+                    <input type="radio" id="coseno" name="angulo" value="Coseno" />
+                </aside>
+                <aside class="row">
+                    <label class="lbNameTag" for="tangente">Tangente</label>
+                    <input type="radio" id="tangente" name="angulo" value="Tangente" />
+                </aside>
+                <aside class="row">
+                    <label class="lbNameTag" for="circulo">&Aacute;rea del C&iacute;rculo</label>
+                    <input type="radio" id="circulo" name="angulo" value="Circulo" />
+                </aside>
+            </aside>
+            <aside class="boxRow boxRow-2">
+                <div class="inputBox">                    
+                    <input type="number" placeholder="# Grados" autocomplete="off" />
+                </div>
+            </aside>
+            <aside class="boxRow boxRow-3">
+                <aside class="boxButton">
+                    <button class="btnCalculate">Calcular</button>
+                </aside>
+                <aside class="inputBox">
+                    <input class="tbResult" type="text" placeholder="# Resultado" disabled/>
+                </aside>                    
+            </aside>
+        </aside>
+        <aside class="boxContent">
+            <aside class="boxImage">
+                <h5>Esperando datos para dibujar gr&aacute;fica</h5>          
+                <canvas id="grafico" width="200" height="100" class="disappear"></canvas>                
+            </aside>
+        </aside>
+    </aside>    
+</aside>
+<script src="~/js/angulos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="~/css/angulos.css" />

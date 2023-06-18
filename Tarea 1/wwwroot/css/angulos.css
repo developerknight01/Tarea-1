@@ -1,0 +1,156 @@
+﻿.disappear{
+    display:none !important;
+}
+.icon{
+    cursor:pointer;
+    padding:2.5px;
+    font-size:22px;
+    color:gray;
+    transition:.35s ease-in-out;
+}
+.icon:hover{
+    color:black;
+}
+.boxHead{
+    width:100%;  
+    padding: 10px 5px;
+}
+.boxHead h2{
+    text-align:justify;
+}
+.boxHead p{
+    text-align:justify;
+    font-size:20px;
+    font-weight:600;
+}
+.boxHead ul li{
+    width:250px;    
+    font-size:20px;  
+    border-bottom:1px solid gray;
+    margin:20px 0px;
+}
+.boxHead ul li span{
+    float:right;
+}
+.boxBody {    
+    width: 100%;
+    padding: 10px 5px;
+    display:flex;
+}
+.boxBody .boxRow{    
+    width:100%;
+    display:block;
+    padding: 10px;
+}
+.boxBody .boxRow .row{    
+    padding:2px;
+    width:200px;
+    display:flex;
+}
+.boxBody .boxRow .row label,
+.boxBody .boxRow .row input{
+    width:fit-content;
+}
+.boxBody .boxRow .row input{    
+    position:relative;    
+}
+.boxBody .boxRow .row:nth-child(1){
+     width:100%;
+     font-weight:800;
+ }
+.boxBody .boxRow .row:nth-child(2) input{
+    left:80px;
+}
+.boxBody .boxRow .row:nth-child(3) input{
+    left:62px;
+}
+.boxBody .boxRow .row:nth-child(4) input{
+    left:48px;
+}
+.boxBody .boxRow-2 .inputBox,
+.boxBody .boxRow-3 .inputBox{
+    box-shadow:0px 0px 5px 0px black;
+    width:300px;
+    padding:5px;
+    margin:0px 0px 20px 0px;
+}
+.boxBody .boxRow-2 .inputBox .icon{
+    position:absolute;
+    left:380px;    
+}
+.boxBody .boxRow-2 .inputBox.focus .icon{
+    left:120px;
+}
+.boxBody .boxRow-2 .inputBox input,
+.boxBody .boxRow-3 .inputBox input{
+    background-color:transparent;
+    border:none;    
+    width:90%;    
+    position:relative;
+    left:30px;
+    outline:none;
+}
+.boxBody .boxRow-3 .inputBox{
+    margin:10px 0px 0px 0px;
+}
+.boxBody .boxRow-3 .row input{
+    width:200px;
+}
+.boxBody .boxRow-3 .boxButton{
+    width:300px;    
+}
+.boxBody .boxRow-3 .boxButton button{
+    border:none;
+    height:40px;
+    width:100px; 
+    border-radius:5px;
+    background-color:lightgreen;
+    box-shadow:0px 0px 5px 0px black;
+    color:black;
+    transition:.35s ease-in-out;
+}
+.boxBody .boxRow-3 .boxButton button:hover{
+    background-color:seagreen;
+    box-shadow:0px 0px 5px 1px black;
+    color:white;
+}
+.boxBody .boxContent{        
+    height:100%;      
+}
+.boxBody .boxContent:nth-child(1){
+    width:20%;
+}
+.boxBody .boxContent:nth-child(2){
+    width:80%;    
+    height:60vh;
+    box-shadow:0px 0px 5px 
+}
+.boxBody .boxContent .boxImage{   
+    width:100%;
+    height:100%;
+    position:relative;       
+}
+.boxBody .boxContent .boxImage h5{
+    width:fit-content;
+    margin:150px auto;
+    visibility:visible;
+    display:block;
+    opacity:100%;
+    transition: .35s ease-in-out;
+}
+.boxBody .boxContent .boxImage h5.hide{
+    visibility:hidden;
+    opacity:0%;
+}
+.boxBody .boxContent .boxImage #grafico{
+    width:80%;
+    margin:auto;
+    opacity:0%;
+    visibility:hidden;
+    display:block;
+    transition:.35s ease-in-out;
+}
+.boxBody .boxContent .boxImage #grafico.show{
+    opacity:100%;
+    visibility:visible;
+}
